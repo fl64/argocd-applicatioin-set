@@ -5,6 +5,8 @@ metadata:
   labels:
     app: echo
   name: echo
+  annotations:
+      argocd.argoproj.io/sync-wave: "50"
 spec:
   replicas: 1
   selector:
